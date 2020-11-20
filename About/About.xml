@@ -1,0 +1,18 @@
+<ModMetaData>
+	<name>TGC patches</name>
+	<author>TGC</author>
+	<packageId>TGC.RWPatches</packageId>
+	<supportedVersions>
+		<li>1.2</li>
+	</supportedVersions>
+    <modDependencies>
+    </modDependencies>
+	<loadBefore>
+	</loadBefore>
+	<loadAfter>
+	</loadAfter>
+	<incompatibleWith>
+	</incompatibleWith>
+	<description>
+	</description>
+</ModMetaData>
