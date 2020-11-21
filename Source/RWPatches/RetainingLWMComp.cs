@@ -26,15 +26,7 @@ namespace RWPatches
             }
         }
 
-        public bool IsRetaining
-        {
-            get => isRetaining; 
-            set
-            {
-                isRetaining = value;
-                Log.Message("isRetaining" + isRetaining.ToString());
-            }
-        }
+        public bool IsRetaining { get => isRetaining; set => isRetaining = value; }
 
         public override void PostExposeData()
         {

@@ -6,6 +6,7 @@ using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 using Verse;
 using Verse.Sound;
 using static HarmonyLib.AccessTools;
@@ -82,22 +83,31 @@ namespace RWPatches
 
         public static void DoSettings(Listing_Standard options)
         {
+            Rect rect;
             options.Label("RWPatches.MinSearchRadius.Header".Translate());
 
             options.CheckboxLabeled("RWPatches.MinSearchRadius.Enabled".Translate(), ref Enabled);
             if (Enabled)
             {
-                options.TextFieldNumericLabeled("RWPatches.MinSearchRadius.MinValue".Translate(), ref MinValue, ref minSearchRadiusValueBuffer, 0f, MaxValue);
-                options.TextFieldNumericLabeled("RWPatches.MinSearchRadius.MaxValue".Translate(), ref MaxValue, ref maxSearchRadiusValueBuffer, MinValue, 100f);
+                rect = options.GetRect(22f);
+                Widgets.Label(rect.LeftHalf(), "RWPatches.MinSearchRadius.MinValue".Translate());
+                Widgets.TextFieldNumeric( rect.RightHalf(), ref MinValue, ref minSearchRadiusValueBuffer, 0f, MaxValue);
+                options.Gap(options.verticalSpacing);
+
+                rect = options.GetRect(22f);
+                Widgets.Label(rect.LeftHalf(), "RWPatches.MinSearchRadius.MaxValue".Translate());
+                Widgets.TextFieldNumeric(rect.RightHalf(), ref MaxValue, ref maxSearchRadiusValueBuffer, MinValue, 100f);
+                options.Gap(options.verticalSpacing);
             }
 
-            var rect = options.GetRect(22f);
+            options.Gap();
+            rect = options.GetRect(22f);
             Widgets.Label(rect.LeftHalf(),"RWPatches.MinSearchRadius.RoundTo".Translate() + ": " + ((RoundTo<=0? "RWPatches.MinSearchRadius.NoRound" : RoundTo.ToString("F1"))));
             float num = Widgets.HorizontalSlider(rect.RightHalf(), RoundTo <= 0 ? 0 : RoundTo, 0, 10, false, null, "0", "10", 0.1f);
+            if (num <= 0) num = -1f;
             if (num != RoundTo)
             {
                 SoundDefOf.DragSlider.PlayOneShotOnCamera(null);
-                if (num <= 0) num = -1f;
             }
             RoundTo = num;
             options.Gap(options.verticalSpacing);
