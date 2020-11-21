@@ -9,4 +9,6 @@
 	
 	<RWPatches.RetainingLWM.Header>Retaining items in LWM storages (needs HaulExplicitly)</RWPatches.RetainingLWM.Header>
 	<RWPatches.RetainingLWM.Enabled>Enable (needs restart!)</RWPatches.RetainingLWM.Enabled>
+	<RWPatches.RetainingLWM.RetainingDefault>Retaining on by default</RWPatches.RetainingLWM.RetainingDefault>
+	<RWPatches.RetainingLWM.RetainingForcedForAll>Enforce retaining for all (For test only)</RWPatches.RetainingLWM.RetainingForcedForAll>
 </LanguageData>

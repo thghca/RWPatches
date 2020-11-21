@@ -10,7 +10,7 @@ namespace RWPatches
 {
     class RetainingLWMComp:ThingComp
     {
-        private bool isRetaining = false;
+        private bool isRetaining = RetainingLWM.RetainingDefault;
 
         private Texture2D cachedCommandTex;
 
@@ -31,7 +31,7 @@ namespace RWPatches
         public override void PostExposeData()
         {
             base.PostExposeData();
-            Scribe_Values.Look<bool>(ref isRetaining, "isRetaining", false, false);
+            Scribe_Values.Look<bool>(ref isRetaining, "isRetaining", RetainingLWM.RetainingDefault, false);
         }
 
         public override IEnumerable<Gizmo> CompGetGizmosExtra()

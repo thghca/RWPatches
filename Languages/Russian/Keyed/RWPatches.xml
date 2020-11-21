@@ -7,6 +7,8 @@
 	<RWPatches.MinSearchRadius.RoundTo>Округление</RWPatches.MinSearchRadius.RoundTo>
 	<RWPatches.MinSearchRadius.NoRound>Без округления</RWPatches.MinSearchRadius.NoRound>
 	
-	<RWPatches.RetainingLWM.Header></RWPatches.RetainingLWM.Header>
+	<RWPatches.RetainingLWM.Header>Накопление в хранилищах LWM (Требуется HaulExplicitly)</RWPatches.RetainingLWM.Header>
 	<RWPatches.RetainingLWM.Enabled>Включить (нужен перезапуск!)</RWPatches.RetainingLWM.Enabled>
+	<RWPatches.RetainingLWM.RetainingDefault>Накопление включено по умолчанию</RWPatches.RetainingLWM.RetainingDefault>
+	<RWPatches.RetainingLWM.RetainingForcedForAll>Принудительно включить для всех хранилищ (Только для тестирования)</RWPatches.RetainingLWM.RetainingForcedForAll>
 </LanguageData>

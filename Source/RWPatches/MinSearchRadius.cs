@@ -102,7 +102,7 @@ namespace RWPatches
 
             options.Gap();
             rect = options.GetRect(22f);
-            Widgets.Label(rect.LeftHalf(),"RWPatches.MinSearchRadius.RoundTo".Translate() + ": " + ((RoundTo<=0? "RWPatches.MinSearchRadius.NoRound" : RoundTo.ToString("F1"))));
+            Widgets.Label(rect.LeftHalf(), "RWPatches.MinSearchRadius.RoundTo".Translate() + ": " + (RoundTo <= 0 ? "RWPatches.MinSearchRadius.NoRound".TranslateSimple() : RoundTo.ToString("F1")));
             float num = Widgets.HorizontalSlider(rect.RightHalf(), RoundTo <= 0 ? 0 : RoundTo, 0, 10, false, null, "0", "10", 0.1f);
             if (num <= 0) num = -1f;
             if (num != RoundTo)
