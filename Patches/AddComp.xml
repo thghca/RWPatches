@@ -1,0 +1,23 @@
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThingDef[defName="LWM_DeepStorage"]/comps</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="LWM_DeepStorage"]</xpath>
+			<value>
+				<comps>
+					<li>
+						<compClass>RWPatches.RetainingLWMComp</compClass>
+					</li>
+				</comps>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="LWM_DeepStorage"]/comps</xpath>
+			<value>
+				<li>
+					<compClass>RWPatches.RetainingLWMComp</compClass>
+				</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>

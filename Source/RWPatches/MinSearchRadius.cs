@@ -82,14 +82,17 @@ namespace RWPatches
 
         public static void DoSettings(Listing_Standard options)
         {
-            options.Label("RWPatches.MinSearchRadius.Header");
+            options.Label("RWPatches.MinSearchRadius.Header".Translate());
 
-            options.CheckboxLabeled("RWPatches.MinSearchRadius".Translate(), ref Enabled);
-            options.TextFieldNumericLabeled("RWPatches.MinSearchRadius.MinValue".Translate(), ref MinValue, ref minSearchRadiusValueBuffer, 0f, MaxValue);
-            options.TextFieldNumericLabeled("RWPatches.MinSearchRadius.MaxValue".Translate(), ref MaxValue, ref maxSearchRadiusValueBuffer, MinValue, 100f);
+            options.CheckboxLabeled("RWPatches.MinSearchRadius.Enabled".Translate(), ref Enabled);
+            if (Enabled)
+            {
+                options.TextFieldNumericLabeled("RWPatches.MinSearchRadius.MinValue".Translate(), ref MinValue, ref minSearchRadiusValueBuffer, 0f, MaxValue);
+                options.TextFieldNumericLabeled("RWPatches.MinSearchRadius.MaxValue".Translate(), ref MaxValue, ref maxSearchRadiusValueBuffer, MinValue, 100f);
+            }
 
             var rect = options.GetRect(22f);
-            Widgets.Label(rect.LeftHalf(),"RWPatches.MinSearchRadius.RoundTo".Translate() + ": " + RoundTo.ToString("F1"));
+            Widgets.Label(rect.LeftHalf(),"RWPatches.MinSearchRadius.RoundTo".Translate() + ": " + ((RoundTo<=0? "RWPatches.MinSearchRadius.NoRound" : RoundTo.ToString("F1"))));
             float num = Widgets.HorizontalSlider(rect.RightHalf(), RoundTo <= 0 ? 0 : RoundTo, 0, 10, false, null, "0", "10", 0.1f);
             if (num != RoundTo)
             {
@@ -109,6 +112,5 @@ namespace RWPatches
 
         private static string minSearchRadiusValueBuffer;
         private static string maxSearchRadiusValueBuffer;
-        private static string minSearchRadiusRoundToBuffer;
     }
 }

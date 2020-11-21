@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<RWPatches.MinSearchRadius.Header>Радиус поиска в крафте</RWPatches.MinSearchRadius.Header>
+	<RWPatches.MinSearchRadius.Enabled>Включить (нужен перезапуск!)</RWPatches.MinSearchRadius.Enabled>
+	<RWPatches.MinSearchRadius.MinValue>Минимальный радиус</RWPatches.MinSearchRadius.MinValue>
+	<RWPatches.MinSearchRadius.MaxValue>Максимальный радиус</RWPatches.MinSearchRadius.MaxValue>
+	<RWPatches.MinSearchRadius.RoundTo>Округление</RWPatches.MinSearchRadius.RoundTo>
+	<RWPatches.MinSearchRadius.NoRound>Без округления</RWPatches.MinSearchRadius.NoRound>
+	
+	<RWPatches.RetainingLWM.Header></RWPatches.RetainingLWM.Header>
+	<RWPatches.RetainingLWM.Enabled>Включить (нужен перезапуск!)</RWPatches.RetainingLWM.Enabled>
+</LanguageData>

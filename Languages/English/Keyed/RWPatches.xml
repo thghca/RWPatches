@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<RWPatches.MinSearchRadius.Header>Custom craft search radius</RWPatches.MinSearchRadius.Header>
+	<RWPatches.MinSearchRadius.Enabled>Enable (needs restart!)</RWPatches.MinSearchRadius.Enabled>
+	<RWPatches.MinSearchRadius.MinValue>Minimum radius</RWPatches.MinSearchRadius.MinValue>
+	<RWPatches.MinSearchRadius.MaxValue>Maximum radius</RWPatches.MinSearchRadius.MaxValue>
+	<RWPatches.MinSearchRadius.RoundTo>Rounding</RWPatches.MinSearchRadius.RoundTo>
+	<RWPatches.MinSearchRadius.NoRound>No rounding</RWPatches.MinSearchRadius.NoRound>
+	
+	<RWPatches.RetainingLWM.Header>Retaining items in LWM storages (needs HaulExplicitly)</RWPatches.RetainingLWM.Header>
+	<RWPatches.RetainingLWM.Enabled>Enable (needs restart!)</RWPatches.RetainingLWM.Enabled>
+</LanguageData>

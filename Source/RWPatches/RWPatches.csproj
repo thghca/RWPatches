@@ -24,7 +24,7 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
+    <DebugType>none</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>..\..\Assemblies\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
@@ -69,6 +69,7 @@
   <ItemGroup>
     <Compile Include="MinSearchRadius.cs" />
     <Compile Include="RetainingLWM.cs" />
+    <Compile Include="RetainingLWMComp.cs" />
     <Compile Include="RWPatches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
