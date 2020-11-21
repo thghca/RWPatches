@@ -39,7 +39,7 @@ namespace RWPatches
                     methodName: nameof(StoreUtility_IsInValidBestStorage_Prefix)));
         }
 
-        static bool StoreUtility_TryFindBestBetterStorageFor_Prefix(Thing t, Map map, ref bool __result)
+        static bool StoreUtility_TryFindBestBetterStorageFor_Prefix(Thing t, ref bool __result)
         {
             if (!Enabled) return true;
 
@@ -52,7 +52,7 @@ namespace RWPatches
             return true;
         }
 
-        static bool StoreUtility_IsInValidBestStorage_Prefix(Thing t, Map map, ref bool __result)
+        static bool StoreUtility_IsInValidBestStorage_Prefix(Thing t, ref bool __result)
         {
             if (!Enabled) return true;
 
