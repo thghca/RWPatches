@@ -20,6 +20,7 @@ namespace RWPatches
             harmony = new Harmony("thghca.RWPatches");
             MinSearchRadius.Patch(harmony);
             RetainingLWM.Patch(harmony);
+            RangedAnimalSK_off.Patch(harmony);
         }
 
         public override void DoSettingsWindowContents(Rect rect) => Settings.Instance.DoSettingsWindowContents(rect);

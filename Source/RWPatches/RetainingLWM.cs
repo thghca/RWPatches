@@ -81,8 +81,6 @@ namespace RWPatches
 
         public static void DoSettings(Listing_Standard options)
         {
-            options.Gap(20f);
-            options.GapLine();
             options.Label("RWPatches.RetainingLWM.Header".Translate());
             options.CheckboxLabeled("RWPatches.RetainingLWM.Enabled".Translate(), ref Enabled);
             options.CheckboxLabeled("RWPatches.RetainingLWM.RetainingDefault".Translate(), ref RetainingDefault);

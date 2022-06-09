@@ -20,9 +20,17 @@ namespace RWPatches
             options.Begin(rect);
             {
                 options.Gap(20f);
+                options.GapLine();
+                options.Gap(20f);
                 MinSearchRadius.DoSettings(options);
                 options.Gap(20f);
+                options.GapLine();
+                options.Gap(20f);
                 RetainingLWM.DoSettings(options);
+                options.Gap(20f);
+                options.GapLine();
+                options.Gap(20f);
+                RangedAnimalSK_off.DoSettings(options);
             }
             options.End();
         }
@@ -34,6 +42,8 @@ namespace RWPatches
             MinSearchRadius.ExposeSettings();
 
             RetainingLWM.ExposeSettings();
+
+            RangedAnimalSK_off.ExposeSettings();
         }
 
     }

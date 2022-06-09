@@ -11,4 +11,7 @@
 	<RWPatches.RetainingLWM.Enabled>Enable (needs restart!)</RWPatches.RetainingLWM.Enabled>
 	<RWPatches.RetainingLWM.RetainingDefault>Retaining on by default</RWPatches.RetainingLWM.RetainingDefault>
 	<RWPatches.RetainingLWM.RetainingForcedForAll>Enforce retaining for all (For test only)</RWPatches.RetainingLWM.RetainingForcedForAll>
+	
+	<RWPatches.RangedAnimalSK_off.Header>Unpatch ranged animal attacks CoreSK patch Expremental!</RWPatches.RetainingLWM.Header>
+	<RWPatches.RangedAnimalSK_off.Enabled>Enable (needs restart!)</RWPatches.RetainingLWM.Enabled>
 </LanguageData>
