@@ -31,6 +31,10 @@ namespace RWPatches
                 options.GapLine();
                 options.Gap(20f);
                 RangedAnimalSK_off.DoSettings(options);
+                options.Gap(20f);
+                options.GapLine();
+                options.Gap(20f);
+                //KyulenFix.DoSettings(options);
             }
             options.End();
         }
@@ -44,6 +48,8 @@ namespace RWPatches
             RetainingLWM.ExposeSettings();
 
             RangedAnimalSK_off.ExposeSettings();
+
+            //KyulenFix.ExposeSettings();
         }
 
     }

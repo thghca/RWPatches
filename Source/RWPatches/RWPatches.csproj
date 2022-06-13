@@ -39,6 +39,7 @@
     <Reference Include="System.Net.Http" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="KyulenFix.cs" />
     <Compile Include="MinSearchRadius.cs" />
     <Compile Include="RangedAnimalSK_off.cs" />
     <Compile Include="RetainingLWM.cs" />

@@ -8,7 +8,7 @@ using Verse;
 
 namespace RWPatches
 {
-    class RangedAnimalSK_off
+    public static class RangedAnimalSK_off
     {
         public static bool Enabled = false;
 
